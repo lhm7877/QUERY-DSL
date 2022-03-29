@@ -73,7 +73,7 @@
     }
   }
   ```
-  
+  https://www.inflearn.com/questions/94056
 ## 수정,삭제 배치 쿼리
 
 - 벌크 연산 처리(쿼리 한번에 처리)
@@ -84,3 +84,14 @@
 - BooleanBuilder 사용
 - 데이터가 많은 동적 쿼리는 기본조건이나 paging이라도 있는게 좋다.
 - where절 사용 (추천) 더 깔끔, 재사용 가능
+
+# 실무 활용 - Spring Data Jpa와 Querydsl
+
+- JpaRepository들은 interface로 동작하기 때문에 사용자 정의 repository를 사용해야 한다.
+- Pageable class 잘 활용하자
+- PageableExecutionUtils count 최적화
+- spring data sort를 querydsl PrderSpecifier로 변환하기 참고 (join 없는 단순한것들 사용, 복잡할때는 파라미터 직접 받자)
+
+# 스프링 데이터 JPA가 제공하는 Querydsl 기능
+
+- 
